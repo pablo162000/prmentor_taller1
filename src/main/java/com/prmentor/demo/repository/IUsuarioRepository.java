@@ -1,5 +1,10 @@
 package com.prmentor.demo.repository;
 
-public interface IUsuarioRepository {
+import com.prmentor.demo.repository.modelo.Usuario;
 
+public interface IUsuarioRepository {
+	
+	public Usuario buscarPorId(Integer id);
+	
+	public void insertar(Usuario usuario);
 }
