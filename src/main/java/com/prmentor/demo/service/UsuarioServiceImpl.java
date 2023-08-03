@@ -29,4 +29,10 @@ public class UsuarioServiceImpl implements IUsuarioService {
 		 this.iUsuarioRepository.insertar(usuario);
 	}
 
+	@Override
+	public Usuario buscarPorCorreo(String correo) {
+		// TODO Auto-generated method stub
+		return this.iUsuarioRepository.buscarPorCorreo(correo);
+	}
+
 }

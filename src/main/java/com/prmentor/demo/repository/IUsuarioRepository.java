@@ -7,4 +7,6 @@ public interface IUsuarioRepository {
 	public Usuario buscarPorId(Integer id);
 	
 	public void insertar(Usuario usuario);
+	
+	public Usuario buscarPorCorreo(String correo);
 }
