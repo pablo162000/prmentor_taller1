@@ -24,7 +24,7 @@ public class ComentarioRepositoryImpl implements IComentarioRepository{
 	}
 
 	@Override
-	@Transactional(value = TxType.REQUIRED)
+	@Transactional(value = TxType.MANDATORY)
 	public void insertar(Comentario comentario) {
 		// TODO Auto-generated method stub
 		this.entityManager.persist(comentario);

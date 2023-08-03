@@ -24,7 +24,7 @@ public class UsuarioRepositoryImpl implements IUsuarioRepository{
 	}
 
 	@Override
-	@Transactional(value = TxType.REQUIRED)
+	@Transactional(value = TxType.MANDATORY)
 	public void insertar(Usuario usuario) {
 		// TODO Auto-generated method stub
 		this.entityManager.persist(usuario);

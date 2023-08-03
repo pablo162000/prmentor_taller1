@@ -17,7 +17,7 @@ public class CursoRepositoryImpl implements ICursoRepository {
 	@PersistenceContext
 	private EntityManager entityManager;
 	@Override
-	@Transactional(value = TxType.REQUIRED)
+	@Transactional(value = TxType.MANDATORY)
 
 	public void guardar(Curso curso) {
 		// TODO Auto-generated method stub
@@ -26,7 +26,7 @@ public class CursoRepositoryImpl implements ICursoRepository {
 	}
 
 	@Override
-	@Transactional(value = TxType.MANDATORY)
+	@Transactional(value = TxType.NOT_SUPPORTED)
 
 	public Curso buscarPorId(Integer Id) {
 		return this.entityManager.find(Curso.class, Id);

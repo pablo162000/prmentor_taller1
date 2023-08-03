@@ -16,7 +16,7 @@ public class MateriaRepositoryImpl implements IMateriaRepository {
 	@PersistenceContext
 	private EntityManager entityManager;
 	@Override
-	@Transactional(value = TxType.REQUIRED)
+	@Transactional(value = TxType.MANDATORY)
 
 	public void guardar(Materia materia) {
 		// TODO Auto-generated method stub

@@ -24,7 +24,7 @@ public class TutorRepositoryImpl implements ITutorRepository{
 	}
 
 	@Override
-	@Transactional(value = TxType.REQUIRED)
+	@Transactional(value = TxType.MANDATORY)
 	public void insertar(Tutor tutor) {
 		// TODO Auto-generated method stub
 		this.entityManager.persist(tutor);

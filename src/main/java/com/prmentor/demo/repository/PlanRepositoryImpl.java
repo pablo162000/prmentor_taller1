@@ -17,7 +17,7 @@ public class PlanRepositoryImpl implements IPlanRepository {
 	private EntityManager entityManager;
 	
 	@Override
-	@Transactional(value = TxType.REQUIRED)
+	@Transactional(value = TxType.MANDATORY)
 	public void guardar(Plan plan) {
 		// TODO Auto-generated method stub
 		this.entityManager.persist(plan);

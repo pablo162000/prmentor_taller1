@@ -18,7 +18,7 @@ public class ReporteRepositoryImpl implements IReporteRepository{
 	private EntityManager entityManager;
 	
 	@Override
-	@Transactional(value = TxType.REQUIRED)
+	@Transactional(value = TxType.MANDATORY)
 
 	public void guardar(Reporte reporte) {
 		

@@ -24,7 +24,7 @@ public class RecursoRepositoryImpl implements IRecursoRepository{
 	}
 
 	@Override
-	@Transactional(value = TxType.REQUIRED)
+	@Transactional(value = TxType.MANDATORY)
 	public void insertar(Recurso recurso) {
 		// TODO Auto-generated method stub
 		this.entityManager.persist(recurso);

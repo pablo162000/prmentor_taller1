@@ -17,7 +17,7 @@ public class CalendarioRepositoryImpl implements ICalendarioRepository {
 	private EntityManager entityManager;
 
 	@Override
-	@Transactional(value = TxType.REQUIRED)
+	@Transactional(value = TxType.MANDATORY)
 	public void guardar(Calendario calendario) {
 		// TODO Auto-generated method stub
 		this.entityManager.persist(calendario);
